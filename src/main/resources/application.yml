@@ -1,0 +1,24 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_musicvisual?serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: admin
+  servlet:
+    multipart:
+      enabled: true #默认支持文件上传
+      max-file-size: -1 #不做限制
+      max-request-size: -1 #不做限制
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  #扫描所有mybatis文件#
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
