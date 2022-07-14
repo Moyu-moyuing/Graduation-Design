@@ -16,7 +16,7 @@
 ### :point_right:进入前端项目目录
 这里由于使用的是vue-admin-template二次开发，因此未改文件夹直接进入即可
 ```bash
-cd vue-admin-template
+cd vue-admin-template-master
 ```
 ### :point_right:安装依赖
 ```bash
